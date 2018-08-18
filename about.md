@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Learner
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+You may say that I'm a dreamer, but I'm not the only one.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dngfng.song@gmail.com](mailto:dngfng.song@gmail.com)
