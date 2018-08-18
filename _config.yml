@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Kiko Now
+name: sailingnn
 
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
@@ -20,7 +20,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
-  - name: Blog
+  - name: sailingnn's Blog
     url: /
   - name: About
     url: /about
@@ -38,10 +38,10 @@ paginate: 5
 footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
-  email:
+  email: dngfng.song@gmail.com
   facebook:
   flickr:
-  github: AWEEKJ/kiko-now
+  github: sailingnn
   googleplus: # anything in your profile username that comes after plus.google.com/
   instagram:
   linkedin:
@@ -49,11 +49,11 @@ footer-links:
   rss: # just type anything here for a working RSS icon
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   tumblr: # https://<username>.tumblr.com
-  twitter: jekyllrb
+  twitter: 
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: © 2017 Kiko Now
+footer-text: © 2018 sailingnn
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -65,7 +65,7 @@ google_analytics:
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url:
-
+https://sailingnn.github.io/
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
