@@ -13,7 +13,7 @@ tags:
 
 `resp, mails = conn.search(None,'FROM', 'someone')`
     
-这种方式需要服务器支持才可以，不幸的是阿里云企业邮箱不支持这种方式。
+[这种方式需要服务器支持](https://stackoverflow.com/questions/40725315/python-imaplib-cant-search-by-from-address)，不幸的是阿里云企业邮箱不支持这种方式。
 
 另外，使用的过程中发现，一些来自其他发件人的邮件有很大的附件，
 
