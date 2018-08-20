@@ -7,7 +7,7 @@ tags:
   - imaplib
 ---
 
-工作中遇到某个发件人账号不定时发送一些文件，需要把它们全部下载下来批量处理。用python的imaplib来处理，主要参考这篇[文章](https://zhuanlan.zhihu.com/p/32814371)
+工作中遇到某个发件人账号不定时发送一些文件，需要把它们全部下载下来批量处理。用python的imaplib来处理，主要参考这篇[文章](https://zhuanlan.zhihu.com/p/32814371)。
 
 折腾了一圈发现，
 
@@ -25,13 +25,13 @@ tags:
 
 
 ```ruby
-    from email.parser import BytesParser, Parser
-    from email.policy import default
-    typ, data = conn.fetch(num,'(RFC822.HEADER)')
-    headers = Parser(policy=default).parsestr(data[0][1].decode('utf-8'))
-    content = headers['from'].split()[-1]
-    if content=='<xxx@xxx.com>':
-        typ, data = conn.fetch(num, '(RFC822)')
+from email.parser import BytesParser, Parser
+from email.policy import default
+typ, data = conn.fetch(num,'(RFC822.HEADER)')
+headers = Parser(policy=default).parsestr(data[0][1].decode('utf-8'))
+content = headers['from'].split()[-1]
+if content=='<xxx@xxx.com>':
+    typ, data = conn.fetch(num, '(RFC822)')
 ```
 
 是以为记。
