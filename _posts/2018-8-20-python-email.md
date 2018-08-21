@@ -11,20 +11,24 @@ tags:
 
 折腾了一圈发现，
 
-`resp, mails = conn.search(None,'FROM', 'someone')`
-    
+```python
+resp, mails = conn.search(None,'FROM', 'someone')
+```
+
 [这种方式需要服务器支持](https://stackoverflow.com/questions/40725315/python-imaplib-cant-search-by-from-address)，不幸的是阿里云企业邮箱不支持这种方式。
 
 另外，使用的过程中发现，一些来自其他发件人的邮件有很大的附件，
 
-`resp, data = conn.fetch (mails[0].split()[len(mails[0].split())-1],'(RFC822)')`
-   
+```python
+resp, data = conn.fetch (mails[0].split()[len(mails[0].split())-1],'(RFC822)')
+```
+
 这种方式把所有的附件内容都读取一遍，速度比较慢，而且容易造成socket error。
 
 可以先读每封邮件RFC822.HEADER的内容，判断收件人，然后再读全部邮件内容。这样速度上也快很多。
 
 
-```ruby
+```python
 from email.parser import BytesParser, Parser
 from email.policy import default
 typ, data = conn.fetch(num,'(RFC822.HEADER)')
