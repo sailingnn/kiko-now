@@ -4,20 +4,25 @@ title: windows下一个奇怪的XeLaTeX报错!
 tags:
   - LaTeX
   - XeLaTeX
+
 ---
 
 前几天使用XelaTex生成pdf时遇到一个报错：
 
-    ThisCenterWallPaper Cannot determine size of graphic in .png (no BoundingBox)
-    
+```latex
+ThisCenterWallPaper Cannot determine size of graphic in .png (no BoundingBox)
+```
+
 源代码是这样的：
 
-````
+```latex
 \newpage
 \thispagestyle{empty} 
 \mbox{}
 \ThisCenterWallPaper{1}{xxxxxxxx_xxx_1.png}
-````
+```
+
+这段代码在整个页面插入一张图片。
 
 说它奇怪是因为其他很多图片也是这种方式插入的，都没有问题，单单这个图片报错。
 
@@ -27,7 +32,7 @@ tags:
 
 我试着把它的名字改短了。
 
-然后...就不报错了。
+然后...就不报错了...
 
 成吉思汗~
 
