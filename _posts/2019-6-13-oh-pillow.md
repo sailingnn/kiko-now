@@ -56,7 +56,7 @@ def resize_cut(image, width, height):
     return region.resize((width, height))
 ```
 
-    一个在特定位置加文字水印的子程序：
+一个在特定位置加文字水印的子程序：
 
 
 ```
