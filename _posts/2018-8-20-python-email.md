@@ -2,7 +2,7 @@
 layout: post
 title: Python imaplib自动下载来自某个发件人的邮件附件
 tags:
-  - python
+  - Python
   - email
   - imaplib
 ---
