@@ -55,8 +55,11 @@ def resize_cut(image, width, height):
     # print("left, right, top, bottom: ",left,right,top,bottom)
     box = (left, top, right, bottom)
     region = image.crop(box)
-    return region.resize((width, height))
+    #return region.resize((width, height))
+    return region.resize((width, height), Image.ANTIALIAS)
 ```
+【注】 默认的resize会形成很多锯齿，最终导致图片上的线都不直。用ANTIALIAS之后就肉眼可见的好起来。
+
 
 一个在特定位置加文字水印的子程序：
 
